@@ -1,19 +1,4 @@
-const firstPlus = document.getElementById('firstPlus');
-firstPlus.addEventListener('click', function(){
-    handleTicket('firstCount', true);
-})
-const firstMinus = document.getElementById('firstMinus');
-firstMinus.addEventListener('click', function(){
-    handleTicket('firstCount', false);
-})
-const economicPlus = document.getElementById('economicPlus');
-economicPlus.addEventListener('click', function(){
-    handleTicket('economyCount', true);
-})
-const economicMinus = document.getElementById('economicMinus');
-economicMinus.addEventListener('click', function(){
-    handleTicket('economyCount', false);
-})
+// TicketCount eventListener
 function handleTicket(id, isIncrease){
     const count = document.getElementById(id).value;
     const countNumber = parseInt(count);
@@ -27,6 +12,9 @@ function handleTicket(id, isIncrease){
     document.getElementById(id).value = updateCount;
     calculation();
 }
+
+
+// calculating total 
 function calculation(){
     firstClassTotal = ticketCount('firstCount');
     economyClassTotal = ticketCount('economyCount');
@@ -36,8 +24,9 @@ function calculation(){
     const updateTax = Math.round(tax);
     document.getElementById('tax').innerText = updateTax;
     document.getElementById('total').innerText = subTotal + updateTax;
-
 }
+
+// ticketCount
 function ticketCount(id){
     const totalNumber = document.getElementById(id).value;
     const total = parseInt(totalNumber);
