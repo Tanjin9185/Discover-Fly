@@ -34,7 +34,7 @@ function ticketCount(id){
 }
 // checkout function
 function checkout(){
-    alert('checkout done');
+    alert('Booking done');
     var cart = document.getElementById('booking-section');
     cart.style.display = 'none';
     var checkoutDone = document.getElementById('thanks-section');

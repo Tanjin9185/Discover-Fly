@@ -52,23 +52,24 @@
             <div class="input-group f-class">
                 <div>
                     <label for="">First Class ($150)</label>
-                    <input id="firstCount" class="inp-style inp-width" value="1" type="text" name="">
+                    <input id="firstCount" class="inp-style inp-width" value="0" type="text" name="">
 
                 </div>
                 <div class="plus-minus-btn">
-                    <p onclick="handleTicket('firstCount', true)">+</p>
-                    <p onclick="handleTicket('firstCount', false)">-</p>
+                    <p class="plus-btn"><span onclick="handleTicket('firstCount', true)">+</span> </p>
+                    <p class="minus-btn"><span onclick="handleTicket('firstCount', false)">-</span></p>
                 </div>
             </div>
 
             <div class="input-group f-class">
                 <div>
                     <label for="">Economy ($100)</label>
-                    <input id="economyCount" class="inp-style inp-width" value="1" type="text" name="">
+                    <input id="economyCount" class="inp-style inp-width" value="0" type="text" name="">
                 </div>
                 <div class="plus-minus-btn">
-                    <p> <span onclick="handleTicket('economyCount', true)">+</span></p>
-                    <p><span onclick="handleTicket('economyCount', false)">-</span> </p>
+                    
+                    <p class="plus-btn"><span onclick="handleTicket('economyCount', true)">+</span></p>
+                    <p class="minus-btn"><span onclick="handleTicket('economyCount', false)">-</span> </p>
                 </div>
             </div>
             <div class="calculations">
@@ -77,7 +78,7 @@
                         <p>Subtotal</p>
                     </div>
                     <div class="right">
-                        <p>$<span id="subTotal">250</span></p>
+                        <p>$<span id="subTotal">000</span></p>
                     </div>
                 </div>
 
@@ -86,7 +87,7 @@
                         <p>Charge 10% VAT</p>
                     </div>
                     <div class="right">
-                        <p>$<span id="tax">25</span></p>
+                        <p>$<span id="tax">000</span></p>
                     </div>
                 </div>
                 <hr>
@@ -95,7 +96,7 @@
                         <h4>Total</h4>
                     </div>
                     <div class="right">
-                        <p>$<span id="total">275</span></p>
+                        <p>$<span id="total">000</span></p>
                     </div>
                 </div>
             </div>
@@ -111,7 +112,7 @@
         </section>
 
         <section id="thanks-section">
-            <h1>Check-Out Done.</h1>
+            <h1>Booking Done.</h1>
             <p>Thanks for Booking.</p>
             <footer>
                 <p class="mt-5">&#169; 2021 Discover Fly || All Right Reserved By Tanjin Ahamed.</p>
@@ -119,6 +120,7 @@
         </section>
 
         <script src="scripts.js"></script>
+        
 
         <!--Thank You-->
 </body>
